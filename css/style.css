@@ -1,7 +1,7 @@
 body {
+	position: relative;
 	width: 1260px;
 	margin: auto;
-	outline: 1px solid orange;
 }
 #header {
 	position: relative;
@@ -64,6 +64,7 @@ body {
 
 #slider {
 	position: relative;
+	top: 65px;
 	width: 1260px;
 	height: 600px;
 	background-image: url("../imgs/slider1.jpg");
@@ -95,6 +96,273 @@ body {
 	position: absolute;
 	top: 500px;
 	left: 605px;	
+}
+/*====================================================================================*/
+
+#whywe {
+	top: 65px;
+	position: relative;
+	width: 1260px;
+	height: 620px;
+	background-image: url("../imgs/whywe.png");
+}
+#whywe_header {
+	position: absolute;
+	top: 100px;
+	left: 230px;
+	width: 800px;
+	font-size: 2.5em;
+	font-family: Roboto Slab, serif;
+	font-weight: bold;
+	text-align: center;
+}
+#whywe_header span:first-child {
+	font-size: 0.7em;
+}
+#whywe_list {
+	position: absolute;
+	top: 350px;
+	left: 190px;
+}
+#whywe_list li{
+	float: left;
+	text-align: center;
+	list-style-type: none;
+}
+#whywe_list li:nth-child(-n+2) {
+	margin-right: 50px;
+}
+#whywe_list li:nth-child(n+2) {
+}
+#whywe_list li:nth-child(n+3) {
+	margin-right: 25px;
+}
+#whywe_list li:nth-child(n+4) {
+	margin-right: 45px;
+}
+.greenBold {
+	color: #0A471E;
+	font-weight: bold;
+	font-size: 1.1em;
+	font-family: Roboto Slab, serif;
+}
+.simpleBold {
+	font-weight: bold;
+	font-size: 0.9em;
+	font-family: Roboto Slab, serif;
+
+}
+.PTSansItalic {
+	font-family: PT Sans, sans-serif;
+	font-style: italic;
+	font-size: 0.8em;
+}
+#whywe_list_big {
+	font-size: 2em;
+}
+/*====================================================================================*/
+
+aside[name=takeDiscnt] {
+	position: relative;
+	top: 65px;
+	width: 1260px;
+	height: 68px;
+	background-image: url("../imgs/takeDiscnt_bg.png");
+	background-repeat: repeat-y;
+	font-family: Roboto Slab, serif;
+}
+aside[name=takeDiscnt] span {
+	position: relative;
+	top: -7px;	
+}
+aside[name=takeDiscnt] span:first-child {
+	font-size: 1em;
+	color: yellow;
+}
+aside[name=takeDiscnt] span:last-child {
+	font-size: 0.8em;
+	color: white;
+}
+aside[name=takeDiscnt] ul {
+	width: 1000px;
+	position: absolute;
+	left: 130px;
+	padding-top: 17px;
+}
+aside[name=takeDiscnt] li{
+	float: left;
+	list-style-type: none;
+	margin-left: 20px;
+}
+.inputText {
+	height: 30px;	
+	padding-left: 10px;
+}
+/*====================================================================================*/
+
+#production {
+	position: relative;
+	top: 65px;
+	width: 1260px;
+	height: 644px;
+	background-image: url("../imgs/production_bg (1).png");
+	color: white;
+	font-family: Roboto Slab, serif;
+}
+#production_header {
+	position: relative;
+	top: 60px;
+	left: 460px;
+	font-size: 1.4em;
+	letter-spacing: 0em;
+}
+#production ul {
+	position: absolute;
+	left: 200px;
+	top: 180px;
+}
+#production li {
+	position: relative;
+	width: 271px;
+	height: 271px;
+	float: left;	
+	list-style-type: none;
+	margin-right: 25px;
+	color: black;
+	text-align: center;
+}
+#production li>span {
+	position: relative;
+	top: 130px;
+}
+#production li>span:first-child {
+	font-weight: bold;
+	font-size: 0.7em;
+	line-height: 1.5em;
+	letter-spacing: 0.4em;
+}
+#production span:last-child {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+#production li:first-child {
+	background-image: url("../imgs/leftCircle.png");
+}
+#production li:nth-child(2) {
+	background-image: url("../imgs/middleCircle.png");
+}
+#production li:last-child {
+	background-image: url("../imgs/rightCircle.png");
+}
+#production input[type=image] {
+	position: absolute;
+	top: 200px;
+	left: 87px;
+}
+#blablabla {
+	width: 700px;
+	font-size: 0.8em;
+	text-align: center;
+	position: absolute;
+	top: 500px;
+	left: 280px;
+	line-height: 1.5em;
+}
+/*====================================================================================*/
+#problems {
+	position: relative;
+	top: 65px;
+	font-family: Roboto Slab, serif;
+	height: 580px;
+}
+#problems div{
+	position: absolute;
+	top: 130px;
+	left: 320px;
+	font-size: 2.5em;
+	font-weight: bold;
+	text-align: center;
+}
+#problems div span:first-child {
+	font-size: 0.7em;
+}
+#problems ul {
+	position: absolute;
+	top: 275px;
+	left: 530px;
+}
+#problems img {
+	position: relative;
+	top: 280px;
+	left: 200px;
+}
+#problems li {
+	line-height: 2.2em;
+	font-size: 0.8em;
+}
+
+#problems li:nth-child(1) {
+	list-style-image: url("../imgs/pic1.png");
+}
+#problems li:nth-child(2) {
+	list-style-image: url("../imgs/pic2.png");
+}
+#problems li:nth-child(3) {
+	list-style-image: url("../imgs/pic3.png");
+}
+#problems li:nth-child(4) {
+	list-style-image: url("../imgs/pic4.png");
+}
+#problems li:nth-child(5) {
+	list-style-image: url("../imgs/pic5.png");
+}
+#problems li:nth-child(6) {
+	list-style-image: url("../imgs/pic6.png");
+}
+#problems li:nth-child(7) {
+	list-style-image: url("../imgs/pic7.png");
+}
+#problems li:nth-child(8) {
+	list-style-image: url("../imgs/pic8.png");
+}
+#problems li:nth-child(9) {
+	list-style-image: url("../imgs/pic9.png");
+}
+/*====================================================================================*/
+
+#solutions {
+	position: relative;
+	top: 65px;
+	height: 566px;
+	background-image: url("../imgs/solutions_bg.png");
+	color: white;
+	font-family: Roboto Slab, serif;
+}
+#solutions div {
+	position: absolute;
+	top: 100px;
+	left: 320px;
+	font-size: 2.5em;
+	font-weight: bold;
+	text-align: center;
+
+}
+#solutions span {
+	font-size: 1.1em;
+}
+#solutions ul {
+	position: absolute;
+	top: 225px;
+	left: 530px;
+}
+#solutions li {
+	list-style-image: url("../imgs/point1.png");
+	line-height: 2.2em;
+	font-size: 0.8em;
+}
+#solutions li:last-child {
+	line-height: 1.5em;
+
 }
 * {
 	margin: 0px;

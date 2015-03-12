@@ -6,20 +6,20 @@
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-	<!-- <header id="header">
+	<header id="header">
 		<div id="header_logo" >
 			<img src="imgs/logoHiter.jpg"/>
 		</div>
 		<div id="header_address">
-			<!-- PTSans_bold ->
+			<!-- PTSans_bold -->
 			<span class="PTSans_bold">Россия, г. Кострома, ул. Островского, д. 44/7</span></br>
-			<!-- charterITC_italic ->
+			<!-- charterITC_italic -->
 			<span class="charterITC_italic">Режим работы: Пн-Пт с 10.00 до 19.00</span>
 		</div>		
 		<div id="header_phone">
-			<!-- PTSans_bold ->
+			<!-- PTSans_bold -->
 			<span class="PTSans_bold">+7 (4942) 37-10-92</span></br>
-			<!-- charterITC_italic ->
+			<!-- charterITC_italic -->
 			<span class="charterITC_italic">Круглосуточно</span>
 		</div>
 		<div id="header_takeCall">
@@ -28,7 +28,7 @@
 	</header>
 
 	<nav id="menu">
-		<ul><!--PT Sans ->
+		<ul><!--PT Sans -->
 			<li id="menu_advantages"><a href="">Преимущества</a></li>
 			<li id="menu_production"><a href="">Продукция</a></li>
 			<li id="menu_problems"><a href="">Проблемы продаж и их решения</a></li>
@@ -39,7 +39,7 @@
 	</nav>	 
 	<section id="slider">
 		<div id="slider_text">
-		<!-- Roboto Slab ->
+		<!-- Roboto Slab -->
 			<span>ОДЕЖДА И АКСЕССУАРЫ</span></br>
 			<span>для рыбалки, охоты и активного отдыха</span>
 		</div>
@@ -52,78 +52,179 @@
 			<img src="imgs/switchAhead.png"/>
 		</div>
 	</section>
--->
+
 
  	<section id="whywe">
 		<div id="whywe_header">
-			<span name="whywe">ПОЧЕМУ 318 МАГАЗИНОВ РОССИИ</span><br/>
-			<span name="chooseus">ВЫБРАЛИ НАС?</span>
+			<span>ПОЧЕМУ 318 МАГАЗИНОВ РОССИИ</span><br/>
+			<span>ВЫБРАЛИ НАС?</span>
 		</div>
-		<div id="innerWhywe">
-			<p>
-				<span class="greenBold">ПОМОГАЕМ ПРОДАВАТЬ<br/></span> <span class="bold12">НАШУ ПРОДУКЦИЮ</span> <span class="innerWhywe_italic">с помощью новой протестированной нами маркетинговой системы</span>
-			</p>
-			<p>
-				<span class="greenBold">ПОСТОЯННО ОБНОВЛЯЕМ<br/></span> <span class="bold12">АССОРТИМЕНТ</span>
-			</p>
-			<p>
-				<span class="greenBold">ПРОДАНО<br/> БОЛЕЕ<br/></span> <span class="bold12">300 000 изделий<br/> 100 000 аксессуаров</span><br/> <span class="innerWhywe_italic">94% из которых нашли своего конечного потребителя</span>
-			</p>
-			<p>
-				<span class="greenBold">РЕКОМЕНДУЕМАЯ НАЦЕНКА<br/></span> <span class="bold12">от <span id="innerWhywe_big">50%</span></span>
-			</p>
-			<p>
-				<span class="greenBold">ТОВАР В НАЛИЧИИ<br/></span> <span class="bold12">ПОСТОЯННО</span>
-			</p>
+		<div>
+			<ul id="whywe_list">
+				<li>
+					<span class="greenBold">ПОМОГАЕМ<br/> ПРОДАВАТЬ</span><br/>
+					<span class="simpleBold">НАШУ ПРОДУКЦИЮ</span><br/>
+					<span class="PTSansItalic">с помощью новой<br/> протестированной нами<br/> маркетинговой системы</span>
+				</li>
+				<li>
+					<span class="greenBold">ПОСТОЯННО<br/> ОБНОВЛЯЕМ</span><br/>
+					<span class="simpleBold">АССОРТИМЕНТ</span>
+				</li>
+				<li>
+					<span class="greenBold">ПРОДАНО<br/> БОЛЕЕ</span><br/>
+					<span class="simpleBold">300 000 изделий<br/> 100 000 аксессуаров</span><br/>
+					<span class="PTSansItalic">94% из которых нашли<br/> своего конечного<br/> потребителя</span>
+				</li>
+				<li>
+					<span class="greenBold">РЕКОМЕНДУЕМАЯ<br/> НАЦЕНКА</span><br/>
+					<span class="simpleBold">от <span id="whywe_list_big">50%</span></span>
+				</li>
+				<li>
+					<span class="greenBold">ТОВАР<br/> В НАЛИЧИИ</span><br/>
+					<span class="simpleBold">ПОСТОЯННО</span>
+				</li>
+			</ul>
 		</div>
 	</section>
-<!--	
-	<aside id="takeDiscnt">
-		<div id="innerTakeDiscnt">
-			<p>
-				<span>ПОЛУЧИТЬ СКИДКУ 5%</span><br/> <span>НА БУДУЩИЙ ЗАКАЗ</span>
-			</p>
-			<form action="" name="discountForm">
-				<input type="text" name="clientName"></input>
-				<input type="text" name="clientPhone"></input>
-				<input type="text" name="clientEmail"></input>
-			</form>
-			<div id="takeDiscntButton">
-				<input type="image" src="imgs/takeDiscntButton.gif"/>
-			</div>	
-		</div>
+	
+	<form id="takeDiscnt_form" action="" name="discountForm"></form>
+	<aside name="takeDiscnt">
+		<ul>
+			<li>
+				<span>ПОЛУЧИТЬ СКИДКУ 5%</span><br/>
+				<span>НА БУДУЩИЙ ЗАКАЗ</span>
+			</li>
+			<li>
+				<input form="takeDiscnt_form" type="text" class="inputText" name="clientName" placeholder="Ваше имя"></input>
+			</li>
+			<li>
+				<input form="takeDiscnt_form" type="text" class="inputText" name="clientPhone" placeholder="Телефон"></input>
+			</li>
+			<li>
+				<input form="takeDiscnt_form" type="text" class="inputText" name="clientEmail" placeholder="Электронная почта"></input>
+			</li>
+			<li>
+				<input form="takeDiscnt_form" type="image" src="imgs/takeDiscnt_button.png"/>
+			</li>
+		</ul>
 	</aside>
-	<section id="ourProduct">
-		<div>
+	<section id="production">
+		<div id="production_header">
 			<span>НАША ПРОДУКЦИЯ</span>
 		</div>
-		<div id="innerOurProduct">
-			<div id="leftCircle" class="innerOurProduct_circle">
-				<div class="text-align-center">
-					<span class="collection-text">коллекция</span><br/>
-					<span  class="timeOfYear">&laquo;ЗИМА&raquo;</span>
-				</div>				
-				<input type="image" src="imgs/lookButton.gif" class="lookButton">
-			</div>
-			<div id="middleCircle" class="innerOurProduct_circle">
-				<div class="text-align-center">
-					<span class="collection-text">коллекция</span><br/>
-					<span  class="timeOfYear">&laquo;ОСЕНЬ-ВЕСНА&raquo;</span>
-				</div>
-				<input type="image" src="imgs/lookButton.gif" class="lookButton">			
-			</div>
-			<div id="rightCircle" class="innerOurProduct_circle">
-				<div class="text-align-center">
-					<span class="collection-text">коллекция</span><br/>
-					<span  class="timeOfYear">&laquo;ЛЕТО&raquo;</span>
-				</div>
-				<input type="image" src="imgs/lookButton.gif" class="lookButton">				
-			</div>
-		</div>
+		<ul>
+			<li>
+				<span>коллекция</span><br/>
+				<input type="image" src="imgs/watch_button.png" class="lookButton">
+				<span>&laquo;ЗИМА&raquo;</span>
+			</li>
+			<li>
+				<span>коллекция</span><br/>
+				<input type="image" src="imgs/watch_button.png" class="lookButton">
+				<span>&laquo;ОСЕНЬ-ВЕСНА&raquo;</span>
+			</li>
+			<li>
+				<span>коллекция</span><br/>
+				<input type="image" src="imgs/watch_button.png" class="lookButton">
+				<span>&laquo;ЛЕТО&raquo;</span>
+			</li>
+		</ul>
 		<div id="blablabla">
 			Компания &laquo;Hiter&raquo; существует с 2007 года и явяется одним из лидеров в сфере производства одежды, снаряжения и аксессуаров для активного отдыха. С продукцией &laquo;Hiter&raquo; туризм, охота или рыбалка становятся по-настоящему удобными и комфортными.
 		</div>
 	</section> 
-	 -->
+<!--	 -->
+<section id="problems">
+	<div>
+		<span>ПРОБЛЕМЫ С КОТОРЫМИ СТАЛКИВАЮТСЯ</span></br>
+		<span>95% МАГАЗИНОВ</span>
+		
+	</div>
+	<ul>
+		<li>
+			ПОСТАВЩИКИ НАВЯЗЫВАЮТ СВОИ УСЛОВИЯ
+		</li>
+		<li>
+			ОТСУТСТВИЕ СКИДОК
+		</li>
+		<li>
+			НИЗКОЕ КАЧЕСТВО ТОВАРА
+		</li>
+		<li>
+			НЕПРИВЛЕКАТЕЛЬНОСТЬ ТОВАРА
+		</li>
+		<li>
+			ТОВАР НЕ СООТВЕТСТВУЕТ СОВРЕМЕННЫМ ТЕНДЕНЦИЯМ
+		</li>
+		<li>
+			ПОСТАВЩИКИ СРАЗУ ЖЕ ТРЕБУЮТ ОПЛАТЫ ЗА ПОСТАВКУ
+		</li>
+		<li>
+			ТРУДНО ПРИВЛЕЧЬ НОВЫХ И УДЕРЖАТЬ СТАРЫХ КЛИЕНТОВ
+		</li>
+		<li>
+			КЛИЕНТЫ ПРОСТО “СМОТРЯТ И УХОДЯТ” ТАК НИЧЕГО И НЕ КУПИВ
+		</li>
+		<li>
+			ТРЕБУЮТСЯ БОЛЬШИЕ ВЛОЖЕНИЯ НА ЗАКУПКУ ПЕРВОНАЧАЛЬНОЙ ПАРТИИ
+		</li>
+	</ul>
+	<img width="241px" height="241px" src="imgs/problems_img.png"/>
+</section>
+<section id="solutions">
+	<div>
+		<span>ПОЧЕМУ ВЫБИРАЮТ НАС?</span>		
+	</div>
+	<ul>
+		<li>
+			ГИБКАЯ СИСТЕМА СКИДОК
+		</LI>
+		<LI>
+			ОТСРОЧКА ПЛАТЕЖА
+		</LI>
+		<LI>
+			МЫ СЛЕДИМ ЗА ТЕНДЕНЦИЯМИ РЫНКА И СРАЗУ ЖЕ СООБЩИМ ВАМ О НОВИНКАХ
+		</LI>
+		<LI>
+			ИНДИВИДУАЛЬНЫЙ ПОДХОД К КЛИЕНТАМ
+		</LI>
+		<LI>
+			ЭРГОНОМИКА, ФУНКЦИОНАЛЬНОСТЬ, СТИЛЬ
+		</LI>
+		<LI>
+			ПОСТОЯННО ОБНОВЛЯЕМЫЙ АССОРТИМЕНТ
+		</LI>
+		<LI>
+			НАЛИЧИЕ АКЦИЙ ДЛЯ КОНЕЧНЫХ ПОТРЕБИТЕЛЕЙ
+		</LI>
+		<LI>
+			МОЖНО ЗАКУПАТЬ ТОВАР В ЛЮБОМ КОЛИЧЕСТВЕ
+		</LI>
+		<LI>
+			КОМПАНИЯ ДВАЖДЫ СТАНОВИЛАСЬ ДИПЛОМАНТОМ КОНКУРСА</BR>
+			«100 ЛУЧШИХ ТОВАРОВ РОССИИ»
+		</li>
+	</ul>
+</section>
+<aside name="takeDiscnt">
+	<ul>
+		<li>
+			<span>ПОЛУЧИТЬ СКИДКУ 5%</span><br/>
+			<span>НА БУДУЩИЙ ЗАКАЗ</span>
+		</li>
+		<li>
+			<input form="takeDiscnt_form" type="text" class="inputText" name="clientName" placeholder="Ваше имя"></input>
+		</li>
+		<li>
+			<input form="takeDiscnt_form" type="text" class="inputText" name="clientPhone" placeholder="Телефон"></input>
+		</li>
+		<li>
+			<input form="takeDiscnt_form" type="text" class="inputText" name="clientEmail" placeholder="Электронная почта"></input>
+		</li>
+		<li>
+			<input form="takeDiscnt_form" type="image" src="imgs/takeDiscnt_button.png"/>
+		</li>
+	</ul>
+</aside>
 </body>
 </html>
