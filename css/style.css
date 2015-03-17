@@ -1,3 +1,35 @@
+
+/* font-family: "RobotoSlabRegular"; */
+@font-face {
+    font-family: "RobotoSlabRegular";
+    src: url("../fonts/RobotoSlabRegular/RobotoSlabRegular.eot");
+    src: url("../fonts/RobotoSlabRegular/RobotoSlabRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoSlabRegular/RobotoSlabRegular.woff") format("woff"),
+    url("../fonts/RobotoSlabRegular/RobotoSlabRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoSlabLight"; */
+@font-face {
+    font-family: "RobotoSlabLight";
+    src: url("../fonts/RobotoSlabLight/RobotoSlabLight.eot");
+    src: url("../fonts/RobotoSlabLight/RobotoSlabLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoSlabLight/RobotoSlabLight.woff") format("woff"),
+    url("../fonts/RobotoSlabLight/RobotoSlabLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoSlabBold"; */
+@font-face {
+    font-family: "RobotoSlabBold";
+    src: url("../fonts/RobotoSlabBold/RobotoSlabBold.eot");
+    src: url("../fonts/RobotoSlabBold/RobotoSlabBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoSlabBold/RobotoSlabBold.woff") format("woff"),
+    url("../fonts/RobotoSlabBold/RobotoSlabBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
 	position: relative;
 	width: 1260px;
@@ -362,6 +394,79 @@ aside[name=takeDiscnt] li{
 }
 #solutions li:last-child {
 	line-height: 1.5em;
+}
+/*====================================================================================*/
+
+#geography {
+	position: relative;
+	top: 65px;
+	height: 970px;
+	background-image: url("../imgs/geography.png");
+	text-align: center;
+	font-weight: bold;
+	font-family: Roboto Slab, serif;
+}
+#geography_header {
+	position: absolute;
+	top: 75px;
+	left: 325px;
+	font-variant: small-caps;
+	font-size: 2.8em;
+}
+#geography_desc {
+	position: absolute;
+	top: 205px;
+	left: 330px;
+	width: 600px;
+	font-size: 0.9em;
+}
+#geography_desc>span {
+	color: red;
+}
+#geography_quantity {
+	position: absolute;
+	top: 330px;
+	left: 440px;
+}
+#geography_bgdesc {
+	position: absolute;
+	top: 670px;
+	left: 485px;
+	width: 290px;
+	font-size: 0.9em;
+	color: white;
+}
+/*====================================================================================*/
+#reasons {
+	position: relative;
+	top: 65px;
+	height: 1080px;
+	font-weight: bold;
+	font-family: Roboto Slab, serif;
+	text-align: center;
+}
+#reasons_header {
+	position: absolute;
+	top: 70px;
+	left: 320px;
+	font-variant: small-caps;
+	font-size: 2.8em;
+}
+#reasons_desc {
+	position: absolute;
+	top: 150px;
+	left: 400px;
+	width: 450px;
+	font-size: 0.8em;
+	line-height: 1.7em;
+}
+#reasons_desc span:first-child {
+	color: red;
+}
+#reasons_desc span:last-child {
+	font-family: PT Sans, serif;
+	font-style: italic;
+	font-weight: normal;
 
 }
 * {
