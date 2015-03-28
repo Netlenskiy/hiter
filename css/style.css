@@ -1,35 +1,21 @@
-
-/* font-family: "RobotoSlabRegular"; */
 @font-face {
-    font-family: "RobotoSlabRegular";
-    src: url("../fonts/RobotoSlabRegular/RobotoSlabRegular.eot");
-    src: url("../fonts/RobotoSlabRegular/RobotoSlabRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoSlabRegular/RobotoSlabRegular.woff") format("woff"),
-    url("../fonts/RobotoSlabRegular/RobotoSlabRegular.ttf") format("truetype");
-    font-style: normal;
+    font-family: "Roboto Slab";
+    src: url("../fonts/RobotoSlab-Regular.ttf") format('truetype');
     font-weight: normal;
+    font-style: normal;
 }
-/* font-family: "RobotoSlabLight"; */
 @font-face {
-    font-family: "RobotoSlabLight";
-    src: url("../fonts/RobotoSlabLight/RobotoSlabLight.eot");
-    src: url("../fonts/RobotoSlabLight/RobotoSlabLight.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoSlabLight/RobotoSlabLight.woff") format("woff"),
-    url("../fonts/RobotoSlabLight/RobotoSlabLight.ttf") format("truetype");
-    font-style: normal;
+	font-family: "charterITC";
+	src: url("../fonts/charterITC.ttf") format("truetype");
     font-weight: normal;
+    font-style: normal;
 }
-/* font-family: "RobotoSlabBold"; */
 @font-face {
-    font-family: "RobotoSlabBold";
-    src: url("../fonts/RobotoSlabBold/RobotoSlabBold.eot");
-    src: url("../fonts/RobotoSlabBold/RobotoSlabBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoSlabBold/RobotoSlabBold.woff") format("woff"),
-    url("../fonts/RobotoSlabBold/RobotoSlabBold.ttf") format("truetype");
-    font-style: normal;
+	font-family: "PT Sans";
+	src: url("../fonts/PTSansRegular.ttf") format("truetype");
     font-weight: normal;
+    font-style: normal;
 }
-
 body {
 	position: relative;
 	width: 1260px;
@@ -66,6 +52,7 @@ body {
 }
 .charterITC_italic {
 	font-family: charterITC, serif;
+	font-style: italic;
 	font-size: 0.9em;
 }
 /*====================================================================================*/
@@ -88,9 +75,19 @@ body {
 	padding-top: 5px;
 	margin-left: 18px;
 }
+
 #menu li>a {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 	color: white;
 	font-size: 0.8em;
+	font-family: PT Sans, sans-serif;
+}
+#menu li>a:hover {
+	text-decoration: none;
 }
 /*====================================================================================*/
 
@@ -129,7 +126,10 @@ body {
 	top: 500px;
 	left: 605px;	
 }
-/*====================================================================================*/
+#slider_switch img {
+	cursor: pointer;
+}
+/*====whywe==========================================================================*/
 
 #whywe {
 	top: 65px;
@@ -365,7 +365,7 @@ aside[name=takeDiscnt] li{
 #solutions {
 	position: relative;
 	top: 65px;
-	height: 566px;
+	height: 565px;
 	background-image: url("../imgs/solutions_bg.png");
 	color: white;
 	font-family: Roboto Slab, serif;
@@ -391,12 +391,13 @@ aside[name=takeDiscnt] li{
 	list-style-image: url("../imgs/point1.png");
 	line-height: 2.2em;
 	font-size: 0.8em;
-}/*
+}
+/*
 #solutions li:nth-last-child(2) {
 	line-height: 2.5em;
 }
-#solutions li:last-child {
-	line-height: 2.5em;
+#solutions ul>li:last-child>span {
+	line-height: -1.5em;
 }*/
 /*====================================================================================*/
 
@@ -419,8 +420,8 @@ aside[name=takeDiscnt] li{
 #geography_desc {
 	position: absolute;
 	top: 205px;
-	left: 330px;
-	width: 600px;
+	left: 295px;
+	width: 650px;
 	font-size: 0.9em;
 }
 #geography_desc>span {
@@ -515,18 +516,17 @@ aside[name=takeDiscnt] li{
 }
 #reasons_slider {
 	position: relative;
-	top: 300px;
+	top: 350px;
 	left: 200px;
 	width: 865px;
 	height: 400px;
-	outline: 1px solid red;
 }
 #reasons_slider img {
 	float: left;
 }
 #r_slider_toggle {
 	position: relative;
-	top: 350px;
+	top: 320px;
 	left: 580px;
 	width: 100px;
 	height: 15px;
@@ -536,9 +536,144 @@ aside[name=takeDiscnt] li{
 	height: 15px;
 	cursor: pointer;
 }
+#r_slider_name {
+	position: absolute;
+	top: 40px;
+	left: 330px;
+	width: 450px;
+	text-align: left;
+}
+#r_slider_name span:first-child {
+	font-size: 1.3em;
+}
+#r_slider_name span:nth-child(3) {
+	font-size: 0.8em;
+	font-style: italic;	
+}
+#r_slider_name span:nth-child(5) {
+	font-size: 0.6em;
+	font-style: italic;	
+}
+#r_slider_progress {
+	position: absolute;
+	top: 130px;
+	left: 330px;
+	text-align: left;
+}
+#r_slider_desc {
+	position: absolute;
+	top: 220px;
+	left: 330px;
+	width: 500px;
+	font-weight: normal;
+	font-size: 0.8em;
+	text-align: left;
+	color: #444;
+}
 /*====================================================================================*/
 
+#comments {
+	position: relative;
+	top: 65px;
+	height: 572px;
+	width: 1260px;
+	background-image: url("../imgs/comments.png");
+}
+#comments_header {
+	position: absolute;
+	top: 85px;
+	left: 375px;
+	font-size: 2em;
+	font-weight: bold;
+	font-family: Roboto Slab, serif;
+}
+#comments_slider {
+	position: absolute;
+	top: 180px;
+	list-style-type: none;
+	left: 200px;
+	font-family: Roboto Slab, serif;
+	text-align: left;
+}
+#comments_slider li {
+	float: left;
+	width: 200px;
+	margin-right: 20px;
+	font-weight: normal;
+}
+#comments_slider li div {
+	width: 200px;
+	height: 60px;
+}
+#comments_slider li span:nth-child(2) {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+#comments_slider li span:nth-child(4) {
+	font-style: italic;
+	font-size: 0.9em;
+}
+#comments_slider li span:nth-child(6) {
+	font-style: italic;
+	font-size: 0.7em;
+}
+#comments_slider li div[name=desc] {
+	margin-top: 30px;
+	font-size: 0.8em;
+	color: #444;
+}
+.comments_buttons {
+	position: absolute;
+	top: 320px;
+	width: 12px;
+	height: 20px;
+	cursor: pointer;
+}
+#comments_pre {
+	left: 150px;
+	background-image: url("../imgs/comments_pre.png");
+}
+#comments_next {
+	right: 150px;
+	background-image: url("../imgs/comments_next.png");
+}
+/*====================================================================================*/
 
+#diploms {
+	position: relative;
+	top: 65px;
+	width: 1260px;
+	height: 526px;
+	background-image: url("../imgs/diploms.png");
+}
+#diploms_header {
+	position: absolute;
+	top: 85px;
+	left: 370px;
+	color: white;
+	font-family: Roboto Slab, serif;
+	font-weight: bold;
+	font-size: 2.2em;
+}
+/*=====	ALL ======================================================================*/
+input[type=image] {
+	-webkit-transition: all0.51s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+input[type=image]:hover {
+	transform: scale(1.1);	
+}
+input[type=image]:active {
+	-webkit-transition: all0.51s ease;
+	-moz-transition: all 0.01s ease;
+	-o-transition: all 0.01s ease;
+	-ms-transition: all 0.01s ease;
+	transition: all 0.01s ease;
+	transform: scale(1.05);	
+}
 * {
 	margin: 0px;
 	padding: 0px;
