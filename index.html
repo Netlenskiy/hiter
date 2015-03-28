@@ -3,7 +3,10 @@
 <head>
 	<title>Hiter</title>
 	<link rel="stylesheet" href="css/style.css"/>
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	<style>
+	</style>
 </head>
 <body>
 <header id="header">
@@ -11,15 +14,11 @@
 		<img src="imgs/logoHiter.jpg"/>
 	</div>
 	<div id="header_address">
-		<!-- PTSans_bold -->
 		<span class="PTSans_bold">Россия, г. Кострома, ул. Островского, д. 44/7</span></br>
-		<!-- charterITC_italic -->
 		<span class="charterITC_italic">Режим работы: Пн-Пт с 10.00 до 19.00</span>
 	</div>		
 	<div id="header_phone">
-		<!-- PTSans_bold -->
 		<span class="PTSans_bold">+7 (4942) 37-10-92</span></br>
-		<!-- charterITC_italic -->
 		<span class="charterITC_italic">Круглосуточно</span>
 	</div>
 	<div id="header_takeCall">
@@ -28,31 +27,30 @@
 </header>
 
 <nav id="menu">
-	<ul><!--PT Sans -->
-		<li id="menu_advantages"><a href="">Преимущества</a></li>
-		<li id="menu_production"><a href="">Продукция</a></li>
-		<li id="menu_problems"><a href="">Проблемы продаж и их решения</a></li>
-		<li id="menu_geography"><a href="">География развития</a></li>
-		<li id="menu_comments"><a href="">Отзывы</a></li>
-		<li id="menu_diploms"><a href="">Дипломы и сертификаты</a></li>
+	<ul>
+		<li id="menu_advantages"><a href="" into="696">Преимущества</a></li>
+		<li id="menu_production"><a href="" into="1384">Продукция</a></li>
+		<li id="menu_problems"><a href="" into="2028">Проблемы продаж и их решения</a></li>
+		<li id="menu_geography"><a href="" into="3241">География развития</a></li>
+		<li id="menu_comments"><a href="" into="5427">Отзывы</a></li>
+		<li id="menu_diploms"><a href="" into="6066">Дипломы и сертификаты</a></li>
 	</ul>
-</nav>	 
+</nav>
+
 <section id="slider">
 	<div id="slider_text">
-	<!-- Roboto Slab -->
 		<span>ОДЕЖДА И АКСЕССУАРЫ</span></br>
 		<span>для рыбалки, охоты и активного отдыха</span>
 	</div>
 	<div>
 		<span id="slider_phone">+7 (4942) 37-10-92</span>
 	</div>
-	<input type="image" src="imgs/takeCallBig.gif"/>
+	<input type="image" class="onMouseOver" src="imgs/takeCallBig.gif"/>
 	<div id="slider_switch">
 		<img src="imgs/switchBack.png"/>
 		<img src="imgs/switchAhead.png"/>
 	</div>
 </section>
-
 
 <section id="whywe">
 	<div id="whywe_header">
@@ -108,6 +106,7 @@
 		</li>
 	</ul>
 </aside>
+<!--///////////////////////////////////////////////////////////////////////////////////////////// -->
 <section id="production">
 	<div id="production_header">
 		<span>НАША ПРОДУКЦИЯ</span>
@@ -133,7 +132,8 @@
 		Компания &laquo;Hiter&raquo; существует с 2007 года и явяется одним из лидеров в сфере производства одежды, снаряжения и аксессуаров для активного отдыха. С продукцией &laquo;Hiter&raquo; туризм, охота или рыбалка становятся по-настоящему удобными и комфортными.
 	</div>
 </section> 
-<!--	 -->
+<!--///////////////////////////////////////////////////////////////////////////////////////////// -->
+
 <section id="problems">
 	<div>
 		<span>ПРОБЛЕМЫ С КОТОРЫМИ СТАЛКИВАЮТСЯ</span></br>
@@ -171,6 +171,7 @@
 	</ul>
 	<img width="241px" height="241px" src="imgs/problems_img.png"/>
 </section>
+
 <section id="solutions">
 	<div>
 		<span>ПОЧЕМУ ВЫБИРАЮТ НАС?</span>		
@@ -178,34 +179,35 @@
 	<ul>
 		<li>
 			ГИБКАЯ СИСТЕМА СКИДОК
-		</LI>
-		<LI>
+		</li>
+		<li>
 			ОТСРОЧКА ПЛАТЕЖА
-		</LI>
-		<LI>
+		</li>
+		<li>
 			МЫ СЛЕДИМ ЗА ТЕНДЕНЦИЯМИ РЫНКА И СРАЗУ ЖЕ СООБЩИМ ВАМ О НОВИНКАХ
-		</LI>
-		<LI>
+		</li>
+		<li>
 			ИНДИВИДУАЛЬНЫЙ ПОДХОД К КЛИЕНТАМ
-		</LI>
-		<LI>
+		</li>
+		<li>
 			ЭРГОНОМИКА, ФУНКЦИОНАЛЬНОСТЬ, СТИЛЬ
-		</LI>
-		<LI>
+		</li>
+		<li>
 			ПОСТОЯННО ОБНОВЛЯЕМЫЙ АССОРТИМЕНТ
-		</LI>
-		<LI>
+		</li>
+		<li>
 			НАЛИЧИЕ АКЦИЙ ДЛЯ КОНЕЧНЫХ ПОТРЕБИТЕЛЕЙ
-		</LI>
-		<LI>
+		</li>
+		<li>
 			МОЖНО ЗАКУПАТЬ ТОВАР В ЛЮБОМ КОЛИЧЕСТВЕ
-		</LI>
-		<LI>
+		</li>
+		<li>
 			КОМПАНИЯ ДВАЖДЫ СТАНОВИЛАСЬ ДИПЛОМАНТОМ КОНКУРСА</BR>
 			«100 ЛУЧШИХ ТОВАРОВ РОССИИ»
 		</li>
 	</ul>
 </section>
+
 <aside name="takeDiscnt">
 	<ul>
 		<li>
@@ -246,6 +248,7 @@
 		В 2014 мы вышли на международный рынок, теперь мы представлены в швеции и польше.
 	</div>
 </section>
+
 <aside name="takeDiscnt">
 	<ul>
 		<li>
@@ -266,13 +269,14 @@
 		</li>
 	</ul>
 </aside>
-<section id="reasons">
+
+<section id="reasons"> 
 	<div id="reasons_header">
 		причины сотрудничать с нами
 	</div>
 	<div id="reasons_desc">
 		Мы уверены в продаваемости нашей продукции и предлагаем вам 
-бесплатно заказать товар на <span>20.000 руб.</span><br>
+		бесплатно заказать товар на <span>20.000 руб.</span><br>
 	<span>(после заключения договора)</span>
 	</div>
 	<div id="reasons_profit">	</div>
@@ -295,10 +299,21 @@
 	</ul>
 	<div id="reasons_slider">
 		<img src="imgs/r_slider_photo1.png" alt="" id="r_slider_photo">
-		<div id="r_slider_name"></div>
-		<div id="r_slider_progress"></div>
-		<div id="r_slider_desc"></div>
+		<div id="r_slider_name">
+			<span>Виктор Винокуров</span><br/>
+			<span>Менеджер по закупкам ООО &laquo;МТС&raquo;</span><br/>
+			<span>(г. Санкт-Петербург)</span>
+		</div>
+		<div id="r_slider_progress">
+			<span>Закупил продукции на: 300.000 руб.</span><br/>
+			<span>Наценка: 80%</span><br/>
+			<span>Прибыль: 240.000 руб.</span>
+		</div>
+		<div id="r_slider_desc">
+			А вот и место, которое для любого нью-йоркца с недавних пор священно. Это – Нижний Манхэттен, квартал Всемирного Торгового Центра. После трагических событий 11 сентября, когда башни-близнецы ВТЦ были разрушены в результате терактов, власти решили построить новый комплекс небоскребов, самым высоким из которых стал WTC 1.
+		</div>
 	</div>
+
 	<div id="r_slider_toggle">
 		<img src="imgs/r_slider_toggle_cur.png" alt="">
 		<img src="imgs/r_slider_toggle_next.png" alt="">
@@ -306,5 +321,128 @@
 	</div>
 </section>
 
+<aside name="takeDiscnt">
+	<ul>
+		<li>
+			<span>ПОЛУЧИТЬ СКИДКУ 5%</span><br/>
+			<span>НА БУДУЩИЙ ЗАКАЗ</span>
+		</li>
+		<li>
+			<input form="takeDiscnt_form" type="text" class="inputText" name="clientName" placeholder="Ваше имя"></input>
+		</li>
+		<li>
+			<input form="takeDiscnt_form" type="text" class="inputText" name="clientPhone" placeholder="Телефон"></input>
+		</li>
+		<li>
+			<input form="takeDiscnt_form" type="text" class="inputText" name="clientEmail" placeholder="Электронная почта"></input>
+		</li>
+		<li>
+			<input form="takeDiscnt_form" type="image" src="imgs/takeDiscnt_button.png"/>
+		</li>
+	</ul>
+</aside>
+<section id="comments">
+	<div id="comments_header">
+		ОТЗЫВЫ НАШИХ ПАРТНЕРОВ
+	</div>
+	<ul id="comments_slider">
+		<li>
+			<div>
+				<img src="imgs/comments_photo1.png" alt="">
+			</div>
+			<span>Денис</span><br/> 
+			<span>Менеджер по закупкам<br/> 
+			ООО &laquo;Охотничий клуб&raquo;</span><br/> 
+			<span>(г. Пенза)</span><br/> 
+			<div name="desc">
+				Цена соответствует качеству. Характеристики материалов (мембрана) не уступают костюмам премиум класса (Норфин). Все костюмы хорошо сидят. Превосходная эргономика.
+			</div>
+		</li>
+		<li>
+			<div>
+				<img src="imgs/comments_photo2.png" alt="">
+			</div>
+			<span>Фролова А.Н.</span><br/> 
+			<span>Индивидуальный <br/>
+			предприниматеь</span><br/> 
+			<span>(г. Москва)</span><br/> 
+			<div name="desc">
+				Грамотность, вежливость и пунктуальность сотрудников. Оперативность поставок, соотношение цена-качество, многофункциональность и эргономика.
+			</div>			
+		</li>
+		<li>
+			<div>
+				<img src="imgs/comments_photo3.png" alt="">
+			</div>
+			<span>Майа</span><br/> 
+			<span>Менеджер по закупкам<br/> 
+			ООО &laquo;МТС&raquo;</span><br/> 
+			<span>(г. Санкт-Петербург)</span><br/> 
+			<div name="desc">
+				Отличное соотношение цена-качество. Вся одежда произведена из высококачественных материалов, отвечающих заявленым характеристикам.
+			</div>			
+		</li>
+		<li>
+			<div>
+				<img src="imgs/comments_photo4.png" alt="">
+			</div>
+			<span>Ирина</span><br/> 
+			<span>Генеральный директор<br/> 
+			ООО &laquo;Роба&raquo;</span><br/> 
+			<span>(г. Череповец)</span><br/> 
+			<div name="desc">
+				Оперативность поставок. Качество. Постоянное наличие моделей на складе. Лояльность к клиентам. Всегда идут на встречу (по отсрочке оплаты).
+			</div>			
+		</li>
+	</ul>
+	<div id="comments_pre" class="comments_buttons">
+	</div>
+	<div id="comments_next" class="comments_buttons"></div>
+</section>
+<aside name="takeDiscnt">
+	<ul>
+		<li>
+			<span>ПОЛУЧИТЬ СКИДКУ 5%</span><br/>
+			<span>НА БУДУЩИЙ ЗАКАЗ</span>
+		</li>
+		<li>
+			<input form="takeDiscnt_form" type="text" class="inputText" name="clientName" placeholder="Ваше имя"></input>
+		</li>
+		<li>
+			<input form="takeDiscnt_form" type="text" class="inputText" name="clientPhone" placeholder="Телефон"></input>
+		</li>
+		<li>
+			<input form="takeDiscnt_form" type="text" class="inputText" name="clientEmail" placeholder="Электронная почта"></input>
+		</li>
+		<li>
+			<input form="takeDiscnt_form" type="image" src="imgs/takeDiscnt_button.png"/>
+		</li>
+	</ul>
+</aside>
+<section id="diploms">
+	<div id="diploms_header">
+		ДИПЛОМЫ И СЕРТИФИКАТЫ
+	</div>
+</section>
+<aside name="takeDiscnt">
+	<ul>
+		<li>
+			<span>ПОЛУЧИТЬ СКИДКУ 5%</span><br/>
+			<span>НА БУДУЩИЙ ЗАКАЗ</span>
+		</li>
+		<li>
+			<input form="takeDiscnt_form" type="text" class="inputText" name="clientName" placeholder="Ваше имя"></input>
+		</li>
+		<li>
+			<input form="takeDiscnt_form" type="text" class="inputText" name="clientPhone" placeholder="Телефон"></input>
+		</li>
+		<li>
+			<input form="takeDiscnt_form" type="text" class="inputText" name="clientEmail" placeholder="Электронная почта"></input>
+		</li>
+		<li>
+			<input form="takeDiscnt_form" type="image" src="imgs/takeDiscnt_button.png"/>
+		</li>
+	</ul>
+</aside>
 </body>
 </html>
