@@ -22,13 +22,14 @@ body {
 	margin: auto;
 }
 #header {
-	position: relative;
+	position: absolute;
 }
 #header_logo {
 	position: absolute;
 	left: 200px;
 }
 #header_address {
+	width: 300px;
 	position: absolute;
 	left: 400px;
 	padding-top: 15px;
@@ -38,13 +39,14 @@ body {
 }
 #header_phone {
 	position: absolute;
+	width: 300px;
 	left: 730px;
-	padding-top: 15px;
+	top: 15px;
 }
 #header_takeCall {
-	float: right;
-	margin-right: 200px;
-	margin-top: 15px;
+	position: absolute;
+	left: 900px;
+	top: 15px;
 }
 .PTSans_bold {
 	font-family: PT Sans, sans-serif;
@@ -75,7 +77,6 @@ body {
 	padding-top: 5px;
 	margin-left: 18px;
 }
-
 #menu li>a {
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -96,12 +97,22 @@ body {
 	top: 65px;
 	width: 1260px;
 	height: 600px;
-	background-image: url("../imgs/slider1.jpg");
 	color: white;
 	font-family: Roboto Slab, serif;
 	font-variant: small-caps;
 	font-weight: bold;
 	text-align: center;
+	overflow: hidden;
+}
+#slider>#img1 {
+	z-index: -1;
+	position: relative;
+}
+#slider>#img2 {
+	z-index: -1;
+	position: absolute;
+	top: 0px;
+	left: 1260px;
 }
 #slider_text {
 	width: 1000px;
@@ -237,7 +248,7 @@ aside[name=takeDiscnt] li{
 	top: 65px;
 	width: 1260px;
 	height: 644px;
-	background-image: url("../imgs/production_bg (1).png");
+	background-image: url("../imgs/production_bg.png");
 	color: white;
 	font-family: Roboto Slab, serif;
 }
@@ -517,53 +528,56 @@ aside[name=takeDiscnt] li{
 #reasons_list>li span {
 	font-weight: bold;
 }
-#reasons_slider {
-	position: relative;
-	top: 350px;
+#r_slider_container {
+	position: absolute;
+	top: 625px;
 	left: 200px;
 	width: 865px;
 	height: 400px;
+	overflow: hidden;
 }
-#reasons_slider img {
+.reasons_slider {
+	position: absolute;
+	width: 865px;
+	height: 400px;
+}
+#r_slider_1 {
+	left: 0px;
+}
+#r_slider_2 {
+	left: 865px;
+}
+#r_slider_3 {
+	left: 1730px;
+}
+.r_slider_img {
 	float: left;
 }
-#r_slider_toggle {
-	position: relative;
-	top: 320px;
-	left: 580px;
-	width: 100px;
-	height: 15px;
-}
-#r_slider_toggle img {
-	width: 15px;
-	height: 15px;
-	cursor: pointer;
-}
-#r_slider_name {
+.r_slider_name {
 	position: absolute;
 	top: 40px;
 	left: 330px;
 	width: 450px;
 	text-align: left;
 }
-#r_slider_name span:first-child {
+.r_slider_name_1 {
 	font-size: 1.3em;
 }
-#r_slider_name span:nth-child(3) {
+.r_slider_name_2 {
 	font-size: 0.8em;
 	font-style: italic;	
 }
-#r_slider_name span:nth-child(5) {
+.r_slider_name_3 {
 	font-size: 0.6em;
 	font-style: italic;	
 }
-#r_slider_progress {
+.r_slider_progress {
 	position: absolute;
 	top: 130px;
 	left: 330px;
 	text-align: left;
 }
-#r_slider_desc {
+.r_slider_desc {
 	position: absolute;
 	top: 220px;
 	left: 330px;
@@ -573,6 +587,19 @@ aside[name=takeDiscnt] li{
 	text-align: left;
 	color: #444;
 }
+#r_slider_toggle {
+	position: relative;
+	top: 680px;
+	left: 580px;
+	width: 100px;
+	height: 15px;
+}
+#r_slider_toggle img {
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+}
+
 /*====================================================================================*/
 
 #comments {
@@ -590,21 +617,33 @@ aside[name=takeDiscnt] li{
 	font-weight: bold;
 	font-family: Roboto Slab, serif;
 }
-#comments_slider {
+#c_slider_container {
 	position: absolute;
 	top: 180px;
-	list-style-type: none;
 	left: 200px;
+	width: 880px;
+	height: 350px;
+	overflow: hidden;
+}
+#comments_slider {
+	position: absolute;
+	left: 0px;
+	list-style-type: none;
 	font-family: Roboto Slab, serif;
 	text-align: left;
+	width: 1880px;
+	height: 350px;
 }
 #comments_slider li {
+	position: relative;
 	float: left;
 	width: 200px;
+	height: 350px;
 	margin-right: 20px;
 	font-weight: normal;
 }
 #comments_slider li div {
+	position: relative;
 	width: 200px;
 	height: 60px;
 }
@@ -626,11 +665,22 @@ aside[name=takeDiscnt] li{
 	color: #444;
 }
 .comments_buttons {
+	-webkit-transition: all 0.51s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
 	position: absolute;
 	top: 320px;
 	width: 12px;
 	height: 20px;
 	cursor: pointer;
+}
+.comments_buttons:hover {
+	transform: scale(1.5);
+}
+.comments_buttons:active {
+	transform: scale(1.1);	
 }
 #comments_pre {
 	left: 150px;
@@ -660,14 +710,14 @@ aside[name=takeDiscnt] li{
 }
 /*=====	ALL ======================================================================*/
 input[type=image] {
-	-webkit-transition: all0.51s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+	-webkit-transition: all 0.51s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
 }
 input[type=image]:hover {
-	transform: scale(1.1);	
+	transform: scale(1.1);
 }
 input[type=image]:active {
 	-webkit-transition: all0.51s ease;
